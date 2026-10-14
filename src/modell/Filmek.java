@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class Filmek {
-    private ArrayList<Film> filmek;
+    private static ArrayList<Film> filmek;
 
     public Filmek() {
         filmek = new ArrayList<>();
@@ -26,7 +26,7 @@ public class Filmek {
         filmek.add(film);
     }
 
-    public List<Film> getFilmek() {
+    public static List<Film> getFilmek() {
         return Collections.unmodifiableList(filmek);
     }
     
